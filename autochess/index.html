@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>星铸</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <header id="top"></header>
+    <div id="lobby"></div>
+    <div id="layout">
+      <aside id="left"></aside>
+      <div id="stage">
+        <div id="board">
+          <div id="hexes"></div>
+          <div id="units"></div>
+          <div id="banner"></div>
+        </div>
+      </div>
+      <aside id="right"></aside>
+    </div>
+    <div id="items"></div>
+    <div id="bench"></div>
+    <footer id="dock">
+      <div id="sell">拖到这里出售</div>
+      <div id="shop"></div>
+      <div id="actions"></div>
+    </footer>
+  </div>
+  <button id="btn-skip" type="button" hidden>跳过战斗</button>
+  <div id="modal"></div>
+  <div id="toasts"></div>
+  <div id="drag-ghost" hidden></div>
+  <script src="logic.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
